@@ -19,7 +19,7 @@
       "laravel":{
         "providers":[
           "Infinidigm\\AppConfig\\AppConfigServiceProvider",
-          "Infinidigm\\AppConfig\\ConfigOverride"
+          "Infinidigm\\AppConfig\\Providers\\ConfigOverride"
         ]
       }
     },
