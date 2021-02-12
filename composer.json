@@ -12,16 +12,16 @@
     "minimum-stability": "dev",
     "autoload":{
       "psr-4": {
-        "Infinidigm\\AppConfig\\":"src/",
+        "Infinidigm\\AppConfig\\":"src/"
       }
     },
     "extra":{
       "laravel":{
         "providers":[
           "Infinidigm\\AppConfig\\AppConfigServiceProvider",
-          "Infinidigm\\AppConfig\\ConfigOverride",
+          "Infinidigm\\AppConfig\\ConfigOverride"
         ]
-      },
+      }
     },
     "require": {}
 }
