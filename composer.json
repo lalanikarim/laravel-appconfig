@@ -1,0 +1,27 @@
+{
+    "name": "infinidigm/appconfig",
+    "description": "Manage your applications's configuration (.env) inside a database.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karim Lalani",
+            "email": "jimmy00784@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+      "psr-4": {
+        "Infinidigm\\AppConfig\\":"src/",
+      }
+    },
+    "extra":{
+      "laravel":{
+        "providers":[
+          "Infinidigm\\AppConfig\\AppConfigServiceProvider",
+          "Infinidigm\\AppConfig\\ConfigOverride",
+        ]
+      },
+    },
+    "require": {}
+}
