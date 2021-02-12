@@ -39,14 +39,9 @@ class AppConfigController extends Controller
         return redirect(route('all-configs'));
     }
 
-    public function destroy(string $config)
+    public function destroy(AppConfig $config)
     {
-        $appConfig = AppConfig::find($config);
-        if($appConfig == null)
-        {
-            abort(404);
-        }
-        $appConfig->delete();
-        return redirect(route('all-configs'));
+      $config->delete();
+      return redirect(route('all-configs'));
     }
 }
