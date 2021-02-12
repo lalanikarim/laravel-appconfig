@@ -37,7 +37,7 @@
           $i++;
           @endphp
           <button class="btn btn-danger" data-toggle="modal" data-target="#delete{{$i}}">Delete</button>
-          @include('appconfig::modals.confirm',['modal_id'=> "delete{$i}",'title' => 'Confirm Config','body' => "Are you sure you want to delete this config: {$appConfig->config}?", 'link' => route('destroy-config',$appConfig->config), 'action' => 'Delete'])
+          @include('appconfig::modals.confirm',['modal_id'=> "delete{$i}",'title' => 'Confirm Config','body' => "Are you sure you want to delete this config: {$appConfig->config}?", 'link' => route('destroy-config',['config'=>$appConfig->config]), 'action' => 'Delete'])
         </td>
       </tr>
     @endforeach
