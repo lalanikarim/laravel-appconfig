@@ -3,6 +3,12 @@
     "description": "Manage your applications's configuration (.env) inside a database.",
     "type": "project",
     "license": "MIT",
+    "repositories":[
+      {
+        "type":"vcs",
+        "url":"https://github.com/lalanikarim/laravel-userisadmin.git"
+      }
+    ],
     "authors": [
         {
             "name": "Karim Lalani",
@@ -23,5 +29,7 @@
         ]
       }
     },
-    "require": {}
+    "require": {
+        "infinidigm/userisadmin": "v0.1.0"
+    }
 }
